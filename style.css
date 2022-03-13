@@ -1,0 +1,81 @@
+:root {
+    --btn_radius: 9rem;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    font-family: 'Recursive', sans-serif;;
+    color: teal;
+}
+
+main {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;    
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+#topic {
+    margin: 0 auto;
+    font-family: 'Cedarville Cursive', cursive;
+    color: orange;
+    font-size: 3rem;
+}
+
+#gif-fig {
+    margin: 0;
+}
+
+#gif-img {
+    width: 75%;
+}
+
+button.nxtBtn {
+    display: inline-block;
+    height: var(--btn_radius);
+    width: var(--btn_radius);
+    border-radius: 50%;
+    border: 1px solid red;
+    font-size: 3rem;
+    margin: 0 auto;
+    bottom: 1rem;
+}
+
+/* loader */
+#circle {
+    position: absolute;
+    left: 120px;
+    top: 120px;
+    transform: translate(-50%,-50%);
+	width: 200px;
+    margin-left: calc(50% - 100px);
+    margin-top: 150px;
+    height: 50px;	
+}
+
+.loader {
+    width: calc(80% - 0px);
+	height: calc(80% - 0px);
+	border: 8px solid #162534;
+	border-top: 8px solid #09f;
+	border-radius: 50%;
+	animation: rotate 5s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes rotate {
+100% {transform: rotate(360deg);}
+} 
